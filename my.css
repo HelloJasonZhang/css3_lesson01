@@ -334,7 +334,7 @@ hidden：背面是不可见的;
 
 .st-panel p {
 	position: absolute;
-	width: 80%;
+	width: 60%;
 	left: 25%;
 	top: 50%;
 	font-size: 16px;
@@ -420,5 +420,37 @@ hidden：背面是不可见的;
 	100%{
 		-webkit-transform:translateY(0px);
 		opacity: 1;
+	}
+}
+
+.st-color {
+	background: #fa96b5;
+}
+
+.st-color .st-desc {
+	background: #fff;
+}
+
+.st-color [data-icon]:after {
+	color: #fa96b5;
+	text-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+.st-color p {
+	color: rgba(255,255,255,0.8);
+}
+
+@media screen and (max-width: 520px) {
+	.st-panel h2 {
+		font-size: 30px;
+	}
+
+	.st-panel p {
+		width: 80%;
+		margin-left: -50px;
+	}
+
+	.st-container > a {
+	    font-size: 10px;
 	}
 }
